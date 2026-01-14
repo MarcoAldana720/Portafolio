@@ -1,0 +1,502 @@
+:root {
+  --primary-color: #3F527D;
+  --secondary-color: #FFFFFF;
+  --tertiary-color: #ECECEC;
+  --quaternary-color: #FFB901;
+
+  /* VARIABLE OF COLORS HOVERS */
+  --primary-color-hover: #3F527D;
+  --secondary-color-hover: #FFB901;
+  --tertiary-color-hover: #FFFFFF;
+}
+
+@media screen and (max-width: 1024px) {
+  .slide_content {
+    margin: 28% 6.2%;
+  }
+  
+  /* STYLE OF HEADER */
+  .menu {
+    padding: 15px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .menu_toggle {
+    display: block;
+  }
+
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    /* margin-top: 96px; */
+    /* margin-top: 86px; */
+    margin-top: 85px;
+  }
+
+  .nav_menu.scrolled-menu {
+    background-color: var(--primary-color);
+  }
+
+  .nav_menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav_menu ul li {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .nav_menu ul li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+  }
+
+  .nav_menu ul li:hover {
+    border-bottom: 2px var(--quaternary-color) dotted;
+  }
+
+  .nav_menu ul li a:hover {
+    color: var(--quaternary-color);
+  }
+
+  .nav_menu.active {
+    left: 0;
+  }
+
+  /* STYLE FOR THE MENU OF PORTAFOLIO */
+  .menu_2 {
+    padding: 15px 40px;
+  }
+
+  .menu_toggle_2 {
+    display: block;
+  }
+
+  .nav_menu_2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    margin-top: 85px;
+  }
+
+  .nav_menu_2.active {
+    left: 0;
+  }
+
+  .nav_menu_2 ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav_menu_2 ul li {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .nav_menu_2 ul li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--secondary-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+  }
+
+  .nav_menu_2 ul li:hover {
+    border-bottom: 2px var(--quaternary-color) dotted;
+  }
+
+  /* STYLE FOR THE CONTENT GENERALS */
+  .content_profile, .content_knowledge, .content_skills {
+    padding: 110px 40px 40px 40px;
+  }
+
+  .content_contact {
+    padding: 110px 40px 70px 40px;
+  }
+
+  .profile_container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .profile_info {
+    width: 100%;
+  }
+
+  .profile_image {
+    width: 50%;
+  }
+
+  /* STYLE FOR THE CONTENT SKILLS */
+  .skills_center {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .skills_left, .skills_right {
+    width: 100%;
+  }
+
+  .content_skills article {
+    padding: 10px 0;
+  }
+
+  /* STYLE FOR THE CONTENT KNOWLEDGE */
+  .knowledge {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 27px;
+  }
+
+  .knowledge article {
+    flex: 1 1 48%;
+    max-width: 48%;
+    min-width: 300px;
+  }
+
+  /* STYLE FOR THE TITLE OF PORTAFOLIO */
+  .title_portafolio {
+    padding: 30px 40px;
+    margin-top: 86px;
+  }
+
+  .wrapper {
+    padding: 40px;
+  }
+
+  .box .content {
+    padding: 25px 0 0 0;
+  }
+
+  .box input[type="radio"]:checked + label + .content {
+    justify-content: space-between;
+  }
+
+  .box .content figure .wrapper_description {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+/* -------------------------------- */
+/*        STYLE FOR THE MOVIL       */
+@media screen and (max-width: 768px) {
+  /* STYLE OF HEADER */
+  .menu {
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .menu_toggle {
+    display: block;
+  }
+
+  .nav_menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    margin-top: 86px;
+  }
+
+  .nav_menu.scrolled-menu {
+    background-color: var(--primary-color-hover);
+  }
+
+  .nav_menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav_menu ul li {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .nav_menu ul li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+  }
+
+  .nav_menu ul li:hover {
+    border-bottom: 2px var(--secondary-color) dotted;
+  }
+
+  .nav_menu ul li a:hover {
+    color: var(--secondary-color);
+  }
+
+  .nav_menu.active {
+    left: 0;
+  }
+
+  /* STYLE FOR THE MENU OF PORTAFOLIO */
+  .menu_2 {
+    padding: 15px 20px;
+  }
+
+  .menu_toggle_2 {
+    display: block;
+  }
+
+  .nav_menu_2 {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.5s ease-in-out;
+    margin-top: 86px;
+  }
+
+  .nav_menu_2.active {
+    left: 0;
+  }
+
+  .nav_menu_2 ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .nav_menu_2 ul li {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+  }
+
+  .nav_menu_2 ul li a {
+    display: block;
+    padding: 20px 0;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    width: 100%;
+  }
+
+  .nav_menu_2 ul li:hover {
+    border-bottom: 2px var(--secondary-color) dotted;
+  }
+
+  /* STYLE FOR THE CONTENT OF GENERALS */
+  .slide_content {
+    margin: 25% 6.2%;
+  }
+
+  .content_profile, .content_skills {
+    padding: 110px 20px 0  20px;
+  }
+
+  .content_portafolio {
+    padding: 35px 20px;
+    text-align: center;
+  }
+
+  .content_contact {
+    padding: 110px 20px 30px 20px;
+  }
+
+  .content_knowledge {
+    padding: 110px 20px 30px 20px;
+  }
+
+  .profile_container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .profile_info {
+    width: 100%;
+  }
+
+  .profile_image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .btn_cv, .btn_hover, .btn_portafolio {
+    width: 100%
+  }
+
+  /* STYLE FOR THE CONTENT OF KNOWLEDGE */
+  .knowledge {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .knowledge article {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 60px 25px;
+  }
+
+  .article_icon_title {
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* STYLE FOR THE CONTENT OF CONTACT */
+  .content_contact {
+    flex-direction: column-reverse;
+  }
+
+  .contact_left {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .contact_left button {
+    width: 100%;
+    margin: auto;
+  }
+
+  .contact_right {
+    width: 100%;
+  }
+
+  /* STYLE FOR THE FOOTER */
+  .content_footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  /* STYLE FOR THE TITLE */
+  .title_portafolio {
+    padding: 20px;
+    margin-top: 86px;
+  }
+
+  /* STYLE FOR THE CONTENT OF TABS */
+  .wrapper {
+    padding: 30px 20px;
+  }
+
+  .box .content {
+    display: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 25px 0 15px 0;
+  }
+
+  .box .content a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .box .content, .box label {
+    order: initial;
+  }
+
+  .box label {
+    width: 100%;
+    margin: 10px 0 0 0;
+    padding: 16px 90px;
+  }
+
+  .box label:first-of-type {
+    margin: 0;
+  }
+
+  .box .content figure {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .box .content figure .wrapper_description {
+    right: 0;
+    opacity: 1;
+  }
+
+  .box input[type="radio"]:checked + label + .content {
+    gap: 25px;
+  }
+
+  .form_login {
+    padding: 15px;
+  }
+
+  .form_login form button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+
+  .g-recaptcha {
+    transform: scale(0.85);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .slide_content {
+    margin: 50% 6.2%;
+  }
+
+  .content_present {
+    padding: 80px 20px 10px 20px;
+  }
+}
